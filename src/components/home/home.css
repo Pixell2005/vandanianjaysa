@@ -1,0 +1,83 @@
+.home {
+  background: linear-gradient(135deg, #ffb8ec, #b892ff);
+  color: #fff;
+  text-align: center;
+  padding: 80px 25px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  box-shadow: 0 5px 20px rgba(255, 255, 255, 0.3);
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  margin: 0;
+  transition: all 0.3s ease;
+}
+
+/* Efek hover ringan seperti footer */
+.home:hover {
+  box-shadow: 0 6px 25px rgba(255, 255, 255, 0.5);
+  transform: scale(1.005);
+}
+
+/* Kontainer pencarian */
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 40px 25px;
+  border-radius: 25px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+  width: 80%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Judul */
+.search-container h1 {
+  font-size: 2.2rem;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+/* Input pencarian */
+.search-container input {
+  width: 80%;
+  max-width: 400px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+/* Efek saat input aktif */
+.search-container input:focus {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+/* Tombol cari */
+.search-container button {
+  background: linear-gradient(135deg, #ff9ce3, #b892ff);
+  border: none;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+/* Efek hover tombol */
+.search-container button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+}
+
+/* Background halaman agar serasi */
+html, body {
+  height: 100%;
+  margin: 0;
+  background: linear-gradient(135deg, #fff0fa, #f3e1ff);
+}

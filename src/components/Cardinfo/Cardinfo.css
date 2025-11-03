@@ -1,0 +1,135 @@
+.cardinfo {
+  background: linear-gradient(135deg, #ff9ce3, #b892ff); /* sama seperti footer */
+  color: #fff;
+  text-align: center;
+  padding: 70px 25px;
+  border-radius: 0; /* ✅ hapus radius agar lebar penuh seperti footer */
+  box-shadow: 0 5px 20px rgba(255, 255, 255, 0.3);
+  width: 100%; /* ✅ full lebar */
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease;
+  margin: 0; /* ✅ hilangkan margin agar sejajar sempurna */
+}
+
+/* container dalam agar isi tetap di tengah */
+.cardinfo-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.cardinfo:hover {
+  box-shadow: 0 6px 25px rgba(255, 255, 255, 0.5);
+  transform: scale(1.01);
+}
+
+.cardinfo h1 {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+.cardinfo p {
+  font-size: 1.1rem;
+  opacity: 0.95;
+  margin-bottom: 40px;
+}
+
+/* --- Setiap section dalam cardinfo --- */
+.card-section {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 30px 20px;
+  margin: 25px auto;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+  width: 90%;
+  max-width: 800px;
+  transition: 0.3s ease;
+}
+
+.card-section:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+}
+
+/* --- Logo Section --- */
+.logo-section img {
+  width: 180px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  transition: transform 0.3s ease;
+}
+
+.logo-section img:hover {
+  transform: rotate(2deg) scale(1.05);
+}
+
+.logo-caption {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+/* --- TypeEffect Section --- */
+.type-effect h2 {
+  margin-bottom: 15px;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.9);
+}
+
+.type-effect ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.type-effect li {
+  background: rgba(255, 255, 255, 0.15);
+  margin: 8px auto;
+  padding: 10px 25px;
+  border-radius: 15px;
+  width: fit-content;
+  font-weight: 500;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+/* --- Evolution Section --- */
+.evolution h2 {
+  margin-bottom: 20px;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.9);
+}
+
+.era-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.era-card {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.3s ease;
+}
+
+.era-card:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: scale(1.05);
+}
+
+.era-card h3 {
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.era-card p {
+  color: #ffe6ff;
+  font-size: 0.95rem;
+}
+
+/* Background halaman agar lembut dan serasi */
+html, body {
+  height: 100%;
+  margin: 0;
+  background: linear-gradient(135deg, #fff0fa, #f3e1ff);
+}

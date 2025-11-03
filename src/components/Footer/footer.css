@@ -1,39 +1,54 @@
 .footer {
-  background: #141e30;
-  background: linear-gradient(135deg, #141e30, #243b55);
+  background: linear-gradient(135deg, #ff9ce3, #b892ff);
   color: #fff;
   text-align: center;
-  padding: 30px 20px;
-  margin-top: 40px;
+  padding: 40px 25px;
+  margin-top: 50px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  box-shadow: 0 -5px 20px rgba(255, 255, 255, 0.3);
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.footer:hover {
+  box-shadow: 0 -6px 25px rgba(255, 255, 255, 0.5);
 }
 
 .footer p {
-  margin: 5px 0;
-  font-size: 0.95rem;
+  margin: 8px 0;
+  font-size: 1rem;
   opacity: 0.9;
+  letter-spacing: 0.5px;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
 }
 
+/* Bagian link sosial media */
 .social-links {
-  margin-top: 15px;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
 }
 
 .social-links a {
-  color: #ffcd70;
-  font-size: 1.8rem;
-  transition: transform 0.3s, color 0.3s;
+  color: #ffe8f7;
+  font-size: 2rem;
+  transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
 }
 
 .social-links a:hover {
-  transform: scale(1.2);
-  color: #fff;
+  transform: scale(1.25);
+  color: #ffb7f5;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.8), 0 0 25px #ff80e1;
 }
 
+/* Layout dasar halaman agar footer tetap di bawah */
 html, body {
   height: 100%;
   margin: 0;
+  background: linear-gradient(135deg, #fff0fa, #f3e1ff);
 }
 
 #root {
@@ -45,4 +60,3 @@ html, body {
 footer {
   margin-top: auto;
 }
-
