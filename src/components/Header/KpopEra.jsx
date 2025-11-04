@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 
-const kpopEras = [
+// ✅ Tambahkan "export" di depan kpopEras agar bisa diimpor dari komponen lain
+export const kpopEras = [
   {
     gen: "1st Generation (1990s - early 2000s)",
     idols: ["H.O.T", "S.E.S", "BoA", "Shinhwa"],
@@ -53,18 +54,15 @@ const KpopEra = () => {
               className="w-full h-48 object-cover"
             />
             <div className="p-6 text-left">
-              {/* Judul generasi */}
               <h3 className="text-2xl font-semibold mb-2 text-purple-700 drop-shadow-sm">
                 {item.gen}
               </h3>
 
-              {/* Daftar idol */}
               <p className="text-sm mb-3">
                 <strong className="text-pink-600 font-semibold">Famous Idols:</strong>{" "}
                 <span className="text-gray-700">{item.idols.join(", ")}</span>
               </p>
 
-              {/* Deskripsi */}
               <p className="text-sm text-gray-600 italic leading-relaxed">
                 {item.desc}
               </p>
@@ -76,4 +74,5 @@ const KpopEra = () => {
   );
 };
 
+// ✅ Tetap ekspor default untuk komponen utama
 export default KpopEra;
